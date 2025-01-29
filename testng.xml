@@ -1,0 +1,34 @@
+<suite name="Cross Browser Tests" thread-count="2" parallel="tests">
+    <test name="Test on Chrome Windows 10">
+        <parameter name="browser" value="chrome" />
+        <parameter name="version" value="128.0" />
+        <parameter name="platform" value="Windows 10" />
+        <classes>
+            <class name="DemoTestNGSelenium.SeleniumTestScenarios" />
+        </classes>
+    </test>
+    <test name="Test on Edge MacOS">
+        <parameter name="browser" value="edge" />
+        <parameter name="version" value="127.0" />
+        <parameter name="platform" value="MacOS Ventura" />
+        <classes>
+            <class name="DemoTestNGSelenium.SeleniumTestScenarios" />
+        </classes>
+    </test>
+    <test name="Test on Firefox Windows 11">
+        <parameter name="browser" value="firefox" />
+        <parameter name="version" value="130.0" />
+        <parameter name="platform" value="Windows 11" />
+        <classes>
+            <class name="DemoTestNGSelenium.SeleniumTestScenarios" />
+        </classes>
+    </test>
+    <test name="Test on Internet Explorer Windows 10">
+        <parameter name="browser" value="internetexplorer" />
+        <parameter name="version" value="11.0" />
+        <parameter name="platform" value="Windows 10" />
+        <classes>
+            <class name="DemoTestNGSelenium.SeleniumTestScenarios" />
+        </classes>
+    </test>
+</suite>
